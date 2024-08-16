@@ -3,19 +3,22 @@ import CardParent from './CardParent'
 import { endPointTableData } from '../data/endpointtabledata'
 
 
-const Endpoints = ({id}) => {
+const Endpoints = ({ id }) => {
     return (
         <CardParent id={id} title={'Endpoints'}>
             <div className="mt-3 mb-1">
                 <h2 className="text-xl font-semibold text-secondary dark:text-lightSecondary">Generate Book</h2>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-2 mb-6">
+            <div className="flex flex-row items-center space-y-0 space-x-2 mb-6">
                 <span className="bg-buttonColor text-gray-900 dark:text-white font-medium py-1 px-4 rounded">
                     POST
                 </span>
-                <span className="bg-primary text-white font-bold text-sm py-3 px-4 rounded">/api/generate-book</span>
+                <span className="bg-primary text-white font-bold text-sm py-3 px-4 rounded">
+                    /api/generate-book
+                </span>
             </div>
+
 
             <div className="mt-5 mb-2">
                 <h2 className="text-md font-semibold text-secondary dark:text-lightSecondary">Request Body</h2>
@@ -46,7 +49,7 @@ const Endpoints = ({id}) => {
                 <h2 className="text-md font-semibold text-secondary dark:text-lightSecondary">Response</h2>
             </div>
             <div>
-                <pre className="bg-gray-700 dark:bg-gray-100 p-4 rounded-lg shadow-inner text-sm text-white dark:text-gray-900">
+                <pre className="bg-gray-700 dark:bg-gray-100 p-4 rounded-lg shadow-inner text-sm text-white dark:text-gray-900 max-w-full overflow-x-auto">
                     <code>
                         {`{
   "status": "Generation started",
@@ -54,6 +57,7 @@ const Endpoints = ({id}) => {
 }`}
                     </code>
                 </pre>
+
             </div>
         </CardParent>
     )

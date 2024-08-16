@@ -68,7 +68,7 @@ const Navbar = ({ toggleTheme, theme }) => {
                     onClick={toggleTheme}
                     className="md:mt-0 px-2 md:px-4 py-2 text-gray-300 dark:text-gray-900 float-right"
                 >
-                    {theme === 'dark' ? <FaSun /> : <FaMoon />}
+                    {theme === 'dark' ? <FaMoon /> : <FaSun />}
                 </button>
             </div>
         </nav>
